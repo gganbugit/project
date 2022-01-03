@@ -2,7 +2,7 @@
 ## KoGPT2를 활용한 자기소개서 문장 생성기
 ## Speech Recognizer를 활용한 모의면접
 
-# 1. 프로젝트 선정 개요
+### 1. 프로젝트 선정 개요
 해마다 취업문은 좁아지고 취업준비생의 부담은 더 가중되고 있다. 취업의 첫 관문인 자기소개서를 작성하는 것이 쉽지 않기 때문이다. 한 취업 사이트 통계에 따르면 자기소개서 작성에 극심한 어려움을 느끼는 이른바 ‘자소서 포비아’를 겪는 구직자도 10명 중 8명인 것으로 집계됐다. 이러한 어려움을 해결하는 데 도움을 줄 수 있는 애플리케이션을 기획했다.
 
 첫 번째로 자기소개서 작성 시 막히는 부분에서 키워드를 입력하면 AI가 문장을 작성해주는 서비스를 자연어 생성(NLP) 모델 중 KoGPT2를 선정하여 약10만개의 합격 자기소개서를 학습 후 어색하거나 문법에 맞지 않는 문장을 지양하고 사용자가 원하는 답변에 근접하도록 샘플링하여 활용하였습니다.
@@ -14,12 +14,12 @@
 
 ![image](https://user-images.githubusercontent.com/88874870/147899493-9d694e7e-623e-415b-b0fa-5a76c30fba30.png)
 
-# 2. 프로젝트 범위 및 구성
+### 2. 프로젝트 범위 및 구성
 ![image](https://user-images.githubusercontent.com/88874870/147899667-3c14c569-9300-46e7-b188-ac38e5bb7b72.png)
 
 
-# 3. 프로젝트 결과
- *  3.1 모델 아키텍처 (Model Architecture)
+### 3. 프로젝트 결과
+ ####  3.1 모델 아키텍처 (Model Architecture)
  
 ![image](https://user-images.githubusercontent.com/88874870/147899748-bda448ce-b657-49b2-a626-c056f14cb7c4.png)
 
@@ -39,7 +39,7 @@ Linkareer.com 사이트의 합격자기소개서 10,522건 전체를 크롤링 �
 [Text Generation]
 앞서 train된 model, tokenizer를 가져와서 샘플링 후 문장을 생성시켰다. k개의 토큰을 뽑는 top_k는 40으로, 누적 분포 값으로 계산하는 top_p는 0.95로 정확한 답변을 얻을 수 있도록 샘플링 하였다.
 
- *  3.2 애플리케이션 (Application)
+ #### 3.2 애플리케이션 (Application)
 
  애플리케이션은 Android를 구현하기 위해 코틀린(Kotlin) 언어를 활용하였다. Server(Django)와 통신을  하기 위해 Square사에서 제공하는 Retrofit2 라이브러리를 사용하였다. Retrofit2는 안드로이드에서 REST API 통신을 위해 구현된 통신 라이브러리이다. 
  
@@ -71,37 +71,37 @@ Linkareer.com 사이트의 합격자기소개서 10,522건 전체를 크롤링 �
  INTERVIEW 화면도 COVER NOTE 화면과 마찬가지로, 진입 시 [그림 13]과 같이 INTERVIEW 화면에 대한 설명을 넣어주었다. 우측 상단에 있는 X 버튼을 누르면 [그림 14]로 전환된다.    
  QUESTION 문자 옆에 재생 버튼을 누르면 20개의 예상 질문 중 무작위로 1개의 질문이 TTS(Text To Speech) 로 변환된다. ANSWER 문자 옆에 버튼을 누르고 말을 하면 STT(Speech To Text)가 실행된다.  ANSWER 창 오른쪽 하단에 저장 버튼을 누르면 모의 면접이 저장되며, [그림 16]과 같이 모의면접이 저장된 것을 확인 할 수 있다. 하단에 4개의 아이콘 중 가장 오른쪽에 있는 아이콘은 로그아웃 버튼으로 버튼을 클릭하면 로그인 화면으로 전환되며, 로그인 시 유지되었던 세션이 종료된다. 저장된 모의면접 클릭 시 전환되는 EDIT PAGE 는 COVER NOTE 와 동일하다. 
 
- * 3.3 통신 순서 (Interconnection Process)
+ #### 3.3 통신 순서 (Interconnection Process)
 ![image](https://user-images.githubusercontent.com/88874870/147908117-4bf3105f-9a7b-467d-a509-1e8465e2853d.png)
 
  본 프로젝트는 Django REST framework를 기반으로 서버를 구축하였으며, 안드로이드 앱에서 keyword를 JSON 형식으로 Server 측에 전송하고 Deep Learning Model에 input 값으로 넣어 모델이 새로운 문장을 만들어 output 값으로 서버에서 안드로이드로 만들어진 sentence들을 JSON 형식으로 송신 한다.
 
- * 3.4 데이터베이스 (Database)
+ #### 3.4 데이터베이스 (Database)
 
 ![image](https://user-images.githubusercontent.com/88874870/147908163-915eb302-1092-4a57-83c8-57beee55af21.png)
 
  데이터베이스는 users, cover, interview의 세 개의 테이블로 구축하였다. 사용자가 회원가입에 사용한 e-mail과 password가 users 테이블에 등록된다. e-mail이 user_id 값으로 저장되어 cover 테이블과 interview 테이블에 내용이 등록될 때 user_id를 가져와 저장 될 수 있도록 하였다.
  사용자가 작성한 자기소개서 제목은 subject를, 내용은 content에 저장 되도록 하였으며, 모의면접 질문은 question에, 답변 내용은 answer에 저장되도록 하였다.
  
-# 4. 개발도구 및 일정
+### 4. 개발도구 및 일정
 
- *  4.1 개발도구
+ ####  4.1 개발도구
   - 개발환경 : AWS EC2, Linux(Ubuntu 18.04), Window 10
   - 개발언어 : Python, Kotlin 
   - 사용기술 : Django Rest Framework, Rest API, TensorFlow, PyTorch, Retrofit2, Android Speech Recognizer
   - 개발도구 : Pycharm, Anaconda, Jupyter lab, Android Studio, Workbench, Insomnia, Mobaxterm
  
- * 4.2 개발일정
+ #### 4.2 개발일정
 ![image](https://user-images.githubusercontent.com/88874870/147908299-b2e10786-a12c-4151-8529-89cfe1c6a5fe.png)
 
- * 4.3 요구사항(Requirements)
+ #### 4.3 요구사항(Requirements)
 ![image](https://user-images.githubusercontent.com/88874870/147908381-0a6e3956-390d-4dd5-b112-52674d9af310.png)
 
-# 5. 참고문헌
+### 5. 참고문헌
 
 ![image](https://user-images.githubusercontent.com/88874870/147908608-e8bca78c-86e0-4a9c-88a3-2cb4cea4a036.png)
 
-# 6. 프로젝트 발전 방향
+### 6. 프로젝트 발전 방향
 
 ![image](https://user-images.githubusercontent.com/88874870/147908728-d30eba7e-45b9-4c9c-b67d-11eeaa10615a.png)
 
