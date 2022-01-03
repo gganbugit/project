@@ -51,28 +51,34 @@ Linkareer.com 사이트의 합격자기소개서 10,522건 전체를 크롤링 �
 ![image](https://user-images.githubusercontent.com/88874870/147907654-75d4b942-a069-45b3-8234-5f12a6d49267.png)
 
 ![image](https://user-images.githubusercontent.com/88874870/147907795-3454aca8-1699-498f-982b-884e051876e1.png)
+
 [그림 4]에서 COVER NOTE 버튼을 클릭 하면 [그림 5] 화면으로 전환 된다. COVER NOTE 화면에 있는 버튼에 대한 설명을 화면 전환 시에 나타냄으로써, 사용자의 기능 이해도를 증진 했다. [그림 5]에서 우측 상단 X 버튼을 누르면 [그림 6]으로 전환 된다. 
 
 ![image](https://user-images.githubusercontent.com/88874870/147907847-1c198378-1fa5-4f47-890d-2b79e711cf2a.png)
+
 키워드를 입력하고 돋보기 버튼을 클릭하면 [그림 7]과 같이 문장을 찾는 동안 사용자가 지루하지 않도록 커스텀 다이얼로그 창이 뜬다. 실제로는 구슬 이미지가 좌우로 움직이며, ‘문장을 생성중입니다’라는 문구가 깜빡거린다. 문장 생성을 완료 하면 [그림 8]과 같이 5개의 문장이 추천문장 1~5에 생성된다. 
  또한, 추천문장 하단에 자기소개서 제목과 내용에 텍스트를 입력하고 자기소개서 제목 창에 디스켓 버튼을 클릭 하면 작성한 자기소개서가 MY PAGE에 저장된다. 
  [그림 8]에서 하단에 보이는 4개의 버튼은 왼쪽부터 메인 화면, COVER NOTE, INTERVIEW, MY PAGE 버튼 이며, 현재는 COVER NOTE 화면이므로 두 번째 COVER NOTE 버튼은 비활성화 되어 있다. 
  
 ![image](https://user-images.githubusercontent.com/88874870/147908067-208f57e9-1a04-4c26-b935-ca8a24b21489.png)
+
  하단에서 제일 왼쪽에 있는 MY PAGE 버튼을 누르면 MY PAGE 화면으로 전환되며, 화면에는 현재 로그인 한 계정, 저장된 자기소개서 개수와 모의면접 개수가 표시 된다. 현재는 저장된 자기소개서가 1개, 모의면접 개수가 0개 이므로 [그림 9]와 같이 화면에 나타난다. 
  저장된 리스트를 클릭 하면 [그림 10] EDIT PAGE 화면으로 전환된다. EDIT PAGE에서는 제목 및 내용 수정, 자기소개서 삭제, 자기소개서 공유하기 기능이 구현되어 있다. 자기소개서 제목 창에 있는 우측 삼선 버튼을 누르면 저장, 삭제, 공유하기 팝업 메뉴가 뜬다. [그림 10]과 같이 자기소개서 제목, 내용을 수정하고 팝업 메뉴에서 저장 버튼을 누르면 수정된 내용으로 자기소개서가 저장된다. 
  삭제 버튼을 누르게 되면 [그림 11]과 같이 한번 더 삭제 여부를 확인하는 다이얼로그 창이 뜨며, 삭제 버튼을 누르면 저장되어 있는 자기소개서가 삭제된다. 공유하기 버튼을 누르면 [그림 12]와 같이 현재 스마트폰에 설치된 어플리케이션 중 공유 기능이 있는 어플리케이션 목록이 뜬다. 
  
  ![image](https://user-images.githubusercontent.com/88874870/147908009-53f4b151-d95d-41a0-9750-ccc09bfb12b2.png)
-INTERVIEW 화면도 COVER NOTE 화면과 마찬가지로, 진입 시 [그림 13]과 같이 INTERVIEW 화면에 대한 설명을 넣어주었다. 우측 상단에 있는 X 버튼을 누르면 [그림 14]로 전환된다.    
+ 
+ INTERVIEW 화면도 COVER NOTE 화면과 마찬가지로, 진입 시 [그림 13]과 같이 INTERVIEW 화면에 대한 설명을 넣어주었다. 우측 상단에 있는 X 버튼을 누르면 [그림 14]로 전환된다.    
  QUESTION 문자 옆에 재생 버튼을 누르면 20개의 예상 질문 중 무작위로 1개의 질문이 TTS(Text To Speech) 로 변환된다. ANSWER 문자 옆에 버튼을 누르고 말을 하면 STT(Speech To Text)가 실행된다.  ANSWER 창 오른쪽 하단에 저장 버튼을 누르면 모의 면접이 저장되며, [그림 16]과 같이 모의면접이 저장된 것을 확인 할 수 있다. 하단에 4개의 아이콘 중 가장 오른쪽에 있는 아이콘은 로그아웃 버튼으로 버튼을 클릭하면 로그인 화면으로 전환되며, 로그인 시 유지되었던 세션이 종료된다. 저장된 모의면접 클릭 시 전환되는 EDIT PAGE 는 COVER NOTE 와 동일하다. 
 
  * 3.3 통신 순서 (Interconnection Process)
 ![image](https://user-images.githubusercontent.com/88874870/147908117-4bf3105f-9a7b-467d-a509-1e8465e2853d.png)
+
  본 프로젝트는 Django REST framework를 기반으로 서버를 구축하였으며, 안드로이드 앱에서 keyword를 JSON 형식으로 Server 측에 전송하고 Deep Learning Model에 input 값으로 넣어 모델이 새로운 문장을 만들어 output 값으로 서버에서 안드로이드로 만들어진 sentence들을 JSON 형식으로 송신 한다.
 
  * 3.4 데이터베이스 (Database)
 ![image](https://user-images.githubusercontent.com/88874870/147908163-915eb302-1092-4a57-83c8-57beee55af21.png)
+
  데이터베이스는 users, cover, interview의 세 개의 테이블로 구축하였다. 사용자가 회원가입에 사용한 e-mail과 password가 users 테이블에 등록된다. e-mail이 user_id 값으로 저장되어 cover 테이블과 interview 테이블에 내용이 등록될 때 user_id를 가져와 저장 될 수 있도록 하였다.
  사용자가 작성한 자기소개서 제목은 subject를, 내용은 content에 저장 되도록 하였으며, 모의면접 질문은 question에, 답변 내용은 answer에 저장되도록 하였다.
  
