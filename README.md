@@ -77,6 +77,7 @@ Linkareer.com 사이트의 합격자기소개서 10,522건 전체를 크롤링 �
  본 프로젝트는 Django REST framework를 기반으로 서버를 구축하였으며, 안드로이드 앱에서 keyword를 JSON 형식으로 Server 측에 전송하고 Deep Learning Model에 input 값으로 넣어 모델이 새로운 문장을 만들어 output 값으로 서버에서 안드로이드로 만들어진 sentence들을 JSON 형식으로 송신 한다.
 
  * 3.4 데이터베이스 (Database)
+
 ![image](https://user-images.githubusercontent.com/88874870/147908163-915eb302-1092-4a57-83c8-57beee55af21.png)
 
  데이터베이스는 users, cover, interview의 세 개의 테이블로 구축하였다. 사용자가 회원가입에 사용한 e-mail과 password가 users 테이블에 등록된다. e-mail이 user_id 값으로 저장되어 cover 테이블과 interview 테이블에 내용이 등록될 때 user_id를 가져와 저장 될 수 있도록 하였다.
