@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/kot/resume2/app/src/main/res/drawable/frame_loading.xml" value="0.21839464882943144" />
+        <entry key="..\:/kot/resume2/app/src/main/res/drawable/frame_one.xml" value="0.2454849498327759" />
+        <entry key="..\:/kot/resume2/app/src/main/res/drawable/frame_three.xml" value="0.2454849498327759" />
+        <entry key="..\:/kot/resume2/app/src/main/res/drawable/frame_two.xml" value="0.2454849498327759" />
+        <entry key="..\:/kot/resume2/app/src/main/res/drawable/imageview_shape.xml" value="0.2454849498327759" />
+        <entry key="..\:/kot/resume2/app/src/main/res/font/fontstyle.xml" value="0.3963541666666667" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout-v28/loading_dialog.xml" value="0.3591485507246377" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/activity_auth.xml" value="0.2046875" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/activity_camera.xml" value="0.21784420289855072" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/coverdetailui.xml" value="0.22" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/fragment_cover.xml" value="0.18" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/fragment_interview.xml" value="0.2375" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/fragment_item_list.xml" value="0.2" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/fragmenttest.xml" value="0.2375" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/frame_loading.xml" value="0.21013513513513513" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/imgtest.xml" value="0.2" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/interviewdetailui.xml" value="0.22" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/introui.xml" value="0.18" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/loading_dialog.xml" value="0.22" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/login_activity.xml" value="0.28306159420289856" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/loginui.xml" value="0.22" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/mainui.xml" value="0.25" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/menuui.xml" value="0.22" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/mycoverui.xml" value="0.22" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/myinterviewui.xml" value="0.22" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/mypagefragui.xml" value="0.2" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/mypagefragui2.xml" value="0.2375" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/mypageinterviewui.xml" value="0.2" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/mypageui.xml" value="0.18" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/mypageui2.xml" value="0.14" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/mytestui.xml" value="0.18" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/newpersonui.xml" value="0.19375" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/registerui.xml" value="0.22" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/resumeex.xml" value="0.22" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/resumeui.xml" value="0.25" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/round.xml" value="0.2375" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/signsplashui.xml" value="0.2957427536231884" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/signui.xml" value="0.2046875" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/splash_ui.xml" value="0.2957427536231884" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/splashui.xml" value="0.2957427536231884" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/sttui.xml" value="0.26268115942028986" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/test.xml" value="0.2046875" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/test2.xml" value="0.33" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/ttex.xml" value="0.22" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/ttsui.xml" value="0.25" />
+        <entry key="..\:/kot/resume2/app/src/main/res/layout/voiceui.xml" value="0.2046875" />
+        <entry key="..\:/kot/resume2/app/src/main/res/menu/changedeleteui.xml" value="0.25" />
+        <entry key="..\:/kot/resume2/app/src/main/res/menu/interviewchangedeleteui.xml" value="0.1293918918918919" />
+        <entry key="..\:/kot/resume2/app/src/main/res/menu/menu_main.xml" value="0.2046875" />
+        <entry key="..\:/kot/resume2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2454849498327759" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/InterviewChangeBtn"
+        android:title="저장"/>
+
+    <item
+        android:id="@+id/InterviewDeleteBtn"
+        android:title="삭제"/>
+
+    <item
+        android:id="@+id/InterviewShareBtn"
+        android:title="공유하기"/>
+</menu>
