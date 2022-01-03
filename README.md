@@ -20,7 +20,7 @@
 
 # 3. 프로젝트 결과
  *  3.1 모델 아키텍처 (Model Architecture)
- *  
+ 
 ![image](https://user-images.githubusercontent.com/88874870/147899748-bda448ce-b657-49b2-a626-c056f14cb7c4.png)
 
 [모델선정]
